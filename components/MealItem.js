@@ -1,11 +1,11 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, Image } from "react-native";
 
-export default MealItem = ({ title }) => {
+export default MealItem = ({ title, imageUrl }) => {
   return (
     <View>
       <Pressable>
         <View>
-          <Image />
+          <Image source={{ uri: imageUrl }} />
           <Text>{title}</Text>
         </View>
       </Pressable>
